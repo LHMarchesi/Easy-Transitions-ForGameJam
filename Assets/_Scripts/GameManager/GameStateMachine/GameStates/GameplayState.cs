@@ -6,7 +6,7 @@ public class GameplayState : IGameState
     
     public void Enter()
     {
-        SceneManager.LoadScene("Gameplay");
+        SceneTransitionManager.Instance.LoadScene("Gameplay");
     }
 
     public void Update()

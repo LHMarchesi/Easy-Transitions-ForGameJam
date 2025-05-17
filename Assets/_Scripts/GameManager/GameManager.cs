@@ -19,7 +19,6 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         stateMachine = new GameStateMachine();
-        stateMachine.ChangeState(new MainMenuState());
     }
 
     private void Update()

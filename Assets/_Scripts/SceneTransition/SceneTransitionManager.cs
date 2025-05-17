@@ -5,9 +5,14 @@ using System.Collections;
 public class SceneTransitionManager : MonoBehaviour
 {
     public static SceneTransitionManager Instance;
-    [SerializeField] private float transitionTime = 1.8f;
+    [SerializeField] private float transitionTime = 3f;
    
     private Animator transitionAnimator;
+
+    private void OnEnable()
+    {
+        transitionAnimator = GetComponent<Animator>();
+    }
 
     private void Awake()
     {
@@ -19,9 +24,6 @@ public class SceneTransitionManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-       
-        transitionAnimator = GetComponent<Animator>();
-        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     public void LoadScene(string sceneName)
@@ -31,14 +33,11 @@ public class SceneTransitionManager : MonoBehaviour
 
     private IEnumerator TransitionAndLoad(string sceneName)
     {
-        transitionAnimator.SetTrigger("Start");
+        transitionAnimator.SetTrigger("StartTransition");
         yield return new WaitForSeconds(transitionTime);
 
         SceneManager.LoadScene(sceneName);
     }
 
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        transitionAnimator.SetTrigger("FadeIn");
-    }
+ 
 }
