@@ -1,2 +1,2 @@
 # GDTV-GameJam-2025
- Game maded for GDTV game jam
+ Game made for the GDTV game jam
