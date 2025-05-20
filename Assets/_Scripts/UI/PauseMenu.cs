@@ -3,10 +3,9 @@ using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
-
     public static PauseMenu Instance { get; private set; }
 
-    [SerializeField] private RawImage pauseImage;
+    private RawImage pauseImage;
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -23,7 +22,7 @@ public class PauseMenu : MonoBehaviour
         ShowPause(false);
     }
 
-    public void ShowPause(bool  pause)
+    public void ShowPause(bool pause)
     {
         pauseImage.gameObject.SetActive(pause);
     }
