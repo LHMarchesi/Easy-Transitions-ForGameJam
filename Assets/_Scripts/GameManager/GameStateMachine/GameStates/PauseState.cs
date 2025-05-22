@@ -20,6 +20,5 @@ public class PauseState : IGameState
     {
         Time.timeScale = 1f;
         PauseMenu.Instance.ShowPause(false);
-
     }
 }
