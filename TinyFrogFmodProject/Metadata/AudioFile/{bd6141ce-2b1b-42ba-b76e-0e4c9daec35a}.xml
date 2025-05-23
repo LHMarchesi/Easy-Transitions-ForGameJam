@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{bd6141ce-2b1b-42ba-b76e-0e4c9daec35a}">
+		<property name="assetPath">
+			<value>SFX_OnTongueTipCollision.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.28433106575963718</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8714caf9-c2ca-49f2-b47f-ef64c04cee0b}</destination>
+		</relationship>
+	</object>
+</objects>

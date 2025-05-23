@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{c7f8aee9-4484-40a4-93bf-72e65cde506f}">
+		<property name="assetPath">
+			<value>CuteGameplayMusic.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>49.152000000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8714caf9-c2ca-49f2-b47f-ef64c04cee0b}</destination>
+		</relationship>
+	</object>
+</objects>

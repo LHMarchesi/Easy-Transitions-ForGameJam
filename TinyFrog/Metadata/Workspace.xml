@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="Workspace" id="{82165210-b0cb-48f9-99d0-ca788ebf003b}">
+		<property name="builtBanksOutputDirectory">
+			<value>../../../GitHub/GDTV-GameJam-2025/Assets/Fmod</value>
+		</property>
+		<relationship name="masterEventFolder">
+			<destination>{d8d3e791-6e9a-4af5-9a4b-a5a1aebdcb47}</destination>
+		</relationship>
+		<relationship name="masterTagFolder">
+			<destination>{18e5f635-8310-4a4f-8338-c1516990171f}</destination>
+		</relationship>
+		<relationship name="masterEffectPresetFolder">
+			<destination>{1c7b1bbe-6eab-4c27-9321-a659a5b73360}</destination>
+		</relationship>
+		<relationship name="masterParameterPresetFolder">
+			<destination>{fe0264dc-f0b6-412c-9068-d2ee7deb69f9}</destination>
+		</relationship>
+		<relationship name="masterBankFolder">
+			<destination>{fb6a4a7a-8011-4a47-8cb9-337fdfd76ebd}</destination>
+		</relationship>
+		<relationship name="masterSandboxFolder">
+			<destination>{6cb2196c-ebe9-4b75-9a4d-58f80da50708}</destination>
+		</relationship>
+		<relationship name="masterAssetFolder">
+			<destination>{8714caf9-c2ca-49f2-b47f-ef64c04cee0b}</destination>
+		</relationship>
+		<relationship name="mixer">
+			<destination>{ba8ea65e-1c29-4897-9e4c-b54d7d6d8b71}</destination>
+		</relationship>
+		<relationship name="profilerSessionFolder">
+			<destination>{3a0a7e5e-434a-45a8-8110-df4942c28dd2}</destination>
+		</relationship>
+		<relationship name="platforms">
+			<destination>{7cf92a61-ae33-4625-9bd7-f4853817472c}</destination>
+		</relationship>
+	</object>
+</objects>
