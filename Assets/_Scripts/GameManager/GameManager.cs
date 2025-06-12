@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         stateMachine = new GameStateMachine();
+        stateMachine.ChangeState(new GameplayState());
     }
 
     private void Update()
@@ -29,6 +30,6 @@ public class GameManager : MonoBehaviour
     public void ChangeState(IGameState newState)
     {
         stateMachine.ChangeState(newState);
-        Debug.Log(stateMachine.GetCurrentState);
+        Debug.Log(stateMachine.CurrentState);
     }
 }

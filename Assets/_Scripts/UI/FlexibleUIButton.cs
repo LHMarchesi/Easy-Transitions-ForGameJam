@@ -17,6 +17,7 @@ public class FlexibleUIButton : MonoBehaviour
     {
         button = GetComponent<Button>();
         button.onClick.AddListener(PerformAction);
+        button.interactable = true;
     }
 
     private void PerformAction()
@@ -27,14 +28,20 @@ public class FlexibleUIButton : MonoBehaviour
                 switch (parameter)
                 {
                     case "MainMenu":
+                        SceneTransitionManager.Instance.LoadScene("MainMenu");
                         GameManager.Instance.ChangeState(new MainMenuState());
                         break;
+
                     case "Gameplay":
+                        SceneTransitionManager.Instance.LoadScene("Gameplay");
                         GameManager.Instance.ChangeState(new GameplayState());
                         break;
+
                     case "Credits":
+                        SceneTransitionManager.Instance.LoadScene("Credits"); //Fixx
                         GameManager.Instance.ChangeState(new CreditsState());
                         break;
+
                 }
                 break;
 
@@ -48,5 +55,7 @@ public class FlexibleUIButton : MonoBehaviour
                 GameManager.Instance.ChangeState(new GameplayState());
                 break;
         }
+
+        button.interactable = false;
     }
 }

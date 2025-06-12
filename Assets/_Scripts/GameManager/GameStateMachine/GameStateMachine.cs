@@ -1,18 +1,21 @@
 ﻿public class GameStateMachine
 {
+    public IGameState CurrentState { get => currentState; set => currentState = value; }
+
     private IGameState currentState;
 
     public void ChangeState(IGameState newState)
     {
-        currentState?.Exit();
-        currentState = newState;
-        currentState.Enter();
+        CurrentState?.Exit();
+        CurrentState = newState;
+        CurrentState.Enter();
     }
 
     public void Update()
     {
-        currentState?.Update();
+        CurrentState?.Update();
     }
 
-    public IGameState GetCurrentState => currentState;
+    public IGameState GetCurrentState => CurrentState;
+
 }

@@ -4,7 +4,7 @@ public class CreditsState : IGameState
 {
     public void Enter()
     {
-        SceneTransitionManager.Instance.LoadScene("Credits");
+        
     }
 
     public void Update() { }

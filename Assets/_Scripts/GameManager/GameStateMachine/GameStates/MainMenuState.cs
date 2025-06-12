@@ -2,7 +2,7 @@
 {
     public void Enter()
     {
-        SceneTransitionManager.Instance.LoadScene("MainMenu");
+    
     }
 
     public void Update() { }
