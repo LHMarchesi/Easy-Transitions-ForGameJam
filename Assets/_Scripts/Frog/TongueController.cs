@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class TongueController : MonoBehaviour
 {
-    [SerializeField] private Transform tongue; // La boca de la rana
+    [SerializeField] private Transform tongue; 
     [SerializeField] private Transform tip;
     [SerializeField] private float tongueSpeed = 10f;
     [SerializeField] private float maxTongueLength = 5f;
@@ -48,7 +48,7 @@ public class TongueController : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(0.1f); // pausa opcional
+        yield return new WaitForSeconds(0.1f); // pausa 
 
         // Retractar
         while (currentLength > 0f)
